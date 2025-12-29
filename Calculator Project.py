@@ -6,7 +6,7 @@ operations = {
     "divide": lambda a,b: a / b,
     "multiply": lambda a,b: a * b,
     "exponent": lambda a,b: a ** b,
-    "average": lambda a,b: add(a, b)/2
+    "average": lambda a,b: (a + b)/2
 }
 
 a = float(input("Enter the first number: "))
@@ -22,3 +22,4 @@ else:
     r = ("Syntax error - try again!")
 
 print(r)
+
