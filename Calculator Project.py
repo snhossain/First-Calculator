@@ -3,7 +3,7 @@
 operations = {
     "add": lambda a,b: a + b,
     "subtract": lambda a,b: a - b,
-    "divide": lambda a,b: a / b,
+    "divide": lambda a, b: a / b if b != 0 else float('inf'),
     "multiply": lambda a,b: a * b,
     "exponent": lambda a,b: a ** b,
     "average": lambda a,b: (a + b)/2
@@ -22,4 +22,3 @@ else:
     r = ("Syntax error - try again!")
 
 print(r)
-
